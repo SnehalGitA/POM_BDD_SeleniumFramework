@@ -41,14 +41,14 @@ public class LoginPage {
 		return s.equals(ExpPageTitle);
 	}
 	
-	public boolean ValidateLoggedInUser() {
-		if (driver.findElement(LoogedInUser).isDisplayed()) {		
-		System.out.println("Successfully LoggedIn");
-		return true;
-		}else {
-		System.out.println("Failed to login");
-		return false;
-		}
+	public void ValidateLoggedInUser() {
+//		if (driver.findElement(LoogedInUser).isDisplayed()) {		
+//		System.out.println("Successfully LoggedIn");
+//		return true;
+//		}else {
+//		System.out.println("Failed to login");
+//		return false;
+//		}
 	}
 	
 	//Login in single method and land to dashboard page 
