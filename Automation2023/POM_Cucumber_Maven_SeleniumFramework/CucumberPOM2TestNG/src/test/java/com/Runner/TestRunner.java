@@ -1,7 +1,6 @@
 package com.Runner;
 import org.junit.runner.RunWith;
 import org.testng.annotations.DataProvider;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
@@ -11,7 +10,8 @@ import io.cucumber.testng.CucumberOptions;
 		features = {"src\\test\\resources\\parallel"},
 		glue = {"parallel"},
 		publish = true ,  //this will create one report at https://reports.cucumber.io/reports/ef9d05a0-b35d-4387-94e2-830740efb62a
-		plugin = {"pretty"
+		plugin = {"pretty",
+				  "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 					},
 		dryRun = false,
 		monochrome = true
