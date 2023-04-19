@@ -10,7 +10,7 @@ public class LoginPage {
 	private By Username = By.name("username");
 	private By Password = By.name("password");
 	private By LoginBtn = By.xpath("//button[@type='submit']");
-	private By LoogedInUser = By.xpath("//span/p[text()='Paul Collings']");
+//	private By LoogedInUser = By.xpath("//span/p[text()='Paul Collings']");
 	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
